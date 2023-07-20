@@ -1,0 +1,10 @@
+{
+  "name": "basd",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/basd.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "private": true
+}

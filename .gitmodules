@@ -1,0 +1,9 @@
+[submodule "modules/base"]
+	path = modules/base
+	url = git@gitlab.com:frenware/core/basd/base.git
+[submodule "modules/evented"]
+	path = modules/evented
+	url = git@gitlab.com:frenware/core/basd/evented.git
+[submodule "modules/pipe"]
+	path = modules/pipe
+	url = git@gitlab.com:frenware/core/basd/pipe.git
