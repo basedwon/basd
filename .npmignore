@@ -92,4 +92,4 @@ jspm_packages/
 
 # npm package specific
 
-/lib/modules
+/modules

@@ -2,9 +2,45 @@
   "name": "basd",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/basd.js",
-  "scripts": {
-    "dev": "nodemon ."
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/basd.git"
   },
-  "private": true
+  "bugs": {
+    "url": "https://github.com/basedwon/basd/issues"
+  },
+  "homepage": "https://github.com/basedwon/basd#readme",
+  "main": "./lib/basd.js",
+  "exports": {
+    ".": {
+      "browser": "./lib/basd.js",
+      "node": "./lib/basd-node.js"
+    },
+    "./*/": "./lib/*/",
+    "./*": "./lib/*.js"
+  },
+  "browser": {
+    ".": "./lib/basd.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "../"
+    ]
+  },
+  "scripts": {
+    "dev": "nodemon ./lib/basd-node"
+  },
+  "dependencies": {
+    "@basd/base": "file:modules/base",
+    "@basd/logger": "file:modules/logger",
+    "@basd/pipe": "file:modules/pipe",
+    "mimetics": "^0.0.4",
+    "moment": "^2.29.4",
+    "msgpack-lite": "^0.1.26",
+    "numeral": "^2.0.6",
+    "tweetnacl": "^1.0.3"
+  },
+  "keywords": []
 }
