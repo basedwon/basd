@@ -30,7 +30,9 @@
     ]
   },
   "scripts": {
-    "dev": "nodemon ./lib/basd-node"
+    "dev": "nodemon ./lib/basd-node",
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "test": "testr test/basd.test.js"
   },
   "dependencies": {
     "@basd/base": "file:modules/base",
@@ -42,5 +44,10 @@
     "numeral": "^2.0.6",
     "tweetnacl": "^1.0.3"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@basd/testr": "^0.0.9",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  }
 }
