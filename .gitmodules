@@ -4,3 +4,6 @@
 [submodule "modules/pipe"]
 	path = modules/pipe
 	url = git@gitlab.com:frenware/core/basd/pipe.git
+[submodule "modules/logger"]
+	path = modules/logger
+	url = git@gitlab.com:frenware/core/basd/logger.git
