@@ -1,6 +1,6 @@
 # basd
 
-> Based code lifts all ships
+> A based code lifts all ships
 
 [![npm](https://img.shields.io/npm/v/basd?style=flat&logo=npm)](https://www.npmjs.com/package/basd)
 [![pipeline](https://gitlab.com/basedwon/basd/badges/master/pipeline.svg)](https://gitlab.com/basedwon/basd/-/pipelines)
@@ -12,7 +12,60 @@
 [![Twitter](https://img.shields.io/badge/@basdwon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-A foundational JavaScript library that extends lodash with various custom utility methods, providing a base for building complex applications. This library also provides additional modules, `@basd/pipe`, `@basd/logger`, and core `@basd/base`, each offering unique functionalities to your projects.
+A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of the `basd` library is the `@basd/base` module, containing many extensions to the Lodash package and other useful and stable packages. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. Basd itself acts as a facade to all of these submodules as well as integrates various common libs such as msgpack and tweetnacl.
+
+## Installation
+
+```bash
+npm install basd
+```
+
+## Usage
+
+Import `basd` into your project and use it like lodash:
+
+```js
+const _ = require('basd')
+// or
+const { _, log, uuid, ...etc } = require('basd')
+```
+
+Then, use any method just like you would use lodash:
+
+```js
+_.log('Hello, World!')
+```
+
+For specific submodule usage, refer to the individual module's documentation.
+
+
+## Features
+- Detailed explanation of what each submodule does.
+
+### @basd/base
+- Purpose and usage of `@basd/base`.
+
+### @basd/pipe
+- Purpose and usage of `@basd/pipe`.
+
+### @basd/logger
+- Purpose and usage of `@basd/logger`.
+
+## Examples
+- Code snippets that show how to use the main functionalities of each module.
+
+## Tests
+- Description of the testing setup and how to run tests.
+
+## Contributing
+- Steps for contributing to the project.
+
+
+
+
+
+
+This library also provides additional modules, `@basd/pipe`, `@basd/logger`, and core `@basd/base`, each offering unique functionalities to your projects.
 
 ## Modules
 
@@ -143,35 +196,38 @@ For a more comprehensive guide on how to use this module, its various methods, a
 
 
 
-## Installation
+
+
+
+
+## Documentation
+
+- [API Reference](/docs/api.md)
+
+## Tests
+
+In order to run the test suite, simply clone the repository and install its dependencies:
 
 ```bash
-npm install basd
+git clone https://gitlab.com/basedwon/basd.git
+cd basd
+npm install
 ```
 
-## Usage
+To run the tests:
 
-Import `basd` into your project and use it like lodash:
-
-```javascript
-const _ = require('basd')
-// or
-const { _, log, uuid } = require('basd')
+```bash
+npm test
 ```
 
-Then, use any method just like you would use lodash:
-
-```javascript
-_.log('Hello, World!')
-```
-
-For specific submodule usage, refer to the individual module's documentation.
+Testing in the browser: *coming soon...*
 
 ## Contributing
-We welcome contributions! Please see our contributing guidelines for details.
 
-## License
-This project is licensed under [MIT](https://opensource.org/licenses/MIT).
+Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
+
+
+
 
 
 
@@ -223,10 +279,6 @@ Your donations are greatly appreciated and help support the continued developmen
 
 
 
-
-
-
-
 ## Support
 
 If you found this project helpful and want to show some love, you can buy me a coffee (or more likely a piece of hardware) with a donation:
@@ -238,139 +290,6 @@ If you found this project helpful and want to show some love, you can buy me a c
 Please note that these addresses are for donations only. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Documentation
-
-- [Basic Usage](/docs/basic-usage.md)
-- [Advanced Usage](/docs/advanced-usage.md)
-- [API Reference](/docs/api.md)
-- [Class Diagram](/docs/class-diagram.md)
-
-<img src="/docs/class-diagram.png" alt="Picobuf class diagram" height="260" />
-
-## Tests
-
-In order to run the test suite, simply clone the repository and install its dependencies:
-
-```bash
-git clone https://gitlab.com/basedwon/picobuf.git
-cd picobuf
-npm install
-```
-
-To run the tests:
-
-```bash
-npm test
-```
-
-Testing in the browser: *coming soon...*
-
-## Contributing
-
-Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
-
 ## License
 
-Picobuf is [MIT licensed](https://gitlab.com/basedwon/picobuf/-/blob/master/LICENSE).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# basd
-
-`basd` is a foundational JavaScript library that underpins various other projects. It is a collection of utilities and helper functions accumulated over years of development. The library is designed to be extensible and modular, using git submodules for different components.
-
-## Key Submodules
-- `@basd/base`: This module is the heart of the library, offering a variety of utility and helper functions.
-- `@basd/pipe`: A pipe mechanism for data streaming.
-- `@basd/logger`: A logging mechanism that can be integrated throughout your projects.
-
-## Installation
-
-You can install this library through npm:
-
-```bash
-npm install basd
-```
-
-## Usage
-
-Import the `basd` library into your JavaScript file:
-
-```javascript
-const _ = require('basd');
-```
-
-Then, you can use the utilities and functions provided. For example, to use the `mkdir` function:
-
-```javascript
-_.mkdir('new_directory');
-```
-
-## Documentation
-
-Full documentation for each submodule and function can be found in their respective README files. However, here's a quick overview of some core functions provided by `@basd/base`:
-
-- `_.isNumeric(num)`: Returns true if the given argument is numeric.
-- `_.toNumber(num, deci)`: Converts the given argument into a number with the provided decimal places.
-- `_.isDate(date)`: Returns true if the given argument is a date.
-- `_.isBool(bool)`: Returns true if the given argument is boolean.
-- `_.isUrl(url)`: Returns true if the given argument is a valid URL.
-
-## Testing
-
-Unit tests are provided for the various components of this library. These tests use the `describe`/`it` functions and the `expect` function from chai.
-
-To run all tests:
-
-```bash
-npm test
-```
-
-## Contributing
-
-Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
-
-
-
-
+Basd is [MIT licensed](https://gitlab.com/basedwon/basd/-/blob/master/LICENSE).
