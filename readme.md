@@ -40,13 +40,14 @@ For specific submodule usage, refer to the individual module's documentation.
 
 ## Submodules
 
-This library also provides additional modules, `@basd/pipe`, `@basd/logger`, and core `@basd/base`, each offering unique functionalities to your projects.
+### [`@basd/base`](https://gitlab.com/frenware/core/basd/base)
+imports lodash and adds various utility and helper functions
 
-### `@basd/base`
+### [`@basd/pipe`](https://gitlab.com/frenware/core/basd/pipe)
+provides pipe and stream functionality
 
-### `@basd/pipe` - > provides pipe and stream functionality
-
-### `@basd/logger`
+### [`@basd/logger`](https://gitlab.com/frenware/core/basd/logger)
+An effective logging tool, configurable to your needs
 
 ## Documentation
 
