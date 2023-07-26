@@ -170,30 +170,9 @@ Testing in the browser: *coming soon...*
 
 Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
 
-
-
-
-
-
-
-
-
 ## Support
 
-If you find this project useful and would like to support our work, consider making a donation. Your contribution helps us continue improving this project and creating new ones. Every little bit counts!
-
-If you find this project useful and want to show some love, you can support it by donating:
-
-If you found this project helpful and want to show some love, you can buy me a coffee (or more likely a piece of hardware) with a donation:
-
-**Bitcoin**: ```3P3QsMVK89JBNqZQv5zMAKG8FK3kJM4rjt```
-
-**Monero**: ```43hhubS27LkaXMHfoHaSKt9gPSPqeZh9gTes2yKvv2usZJJ6SQ4nVas2CdPvP1JnZeSsXC37LJzZvG13M3b8HgN9P7yjddv```
-
-
-
-
-Here are our wallet addresses:
+If you find this project useful and want to help support further development, please send us some coin. We greatly appreciate any and all contributions. Thank you!
 
 **Bitcoin (BTC):**
 ```
@@ -204,17 +183,6 @@ Here are our wallet addresses:
 ```
 4AgoP6wU6p4xZyq9CoJZa3T2FJbgU4dHii5EJDMzvbaNQmsUvVNwZaJbeGUTkiQJfz6hmEKwGQXW8v9RjSxXp6EFLa5XU
 ```
-
-Please, scan the following QR codes if you prefer mobile wallets:
-
-![Bitcoin QR](https://example.com/bitcoin-qr.png) ![Monero QR](https://example.com/monero-qr.png)
-
-We sincerely appreciate your generosity!
-
-Your donations are greatly appreciated and help support the continued development of this project.
-
-Please note that these addresses are for donations only. 
-
 
 ## License
 
