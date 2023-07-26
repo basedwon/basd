@@ -1,6 +1,6 @@
 # basd
 
-> A based code lifts all ships
+> based code lifts all ships
 
 [![npm](https://img.shields.io/npm/v/basd?style=flat&logo=npm)](https://www.npmjs.com/package/basd)
 [![pipeline](https://gitlab.com/basedwon/basd/badges/master/pipeline.svg)](https://gitlab.com/basedwon/basd/-/pipelines)
@@ -12,7 +12,7 @@
 [![Twitter](https://img.shields.io/badge/@basdwon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of the `basd` library is the `@basd/base` module, containing many extensions to the Lodash package and other useful and stable packages. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. Basd itself acts as a facade to all of these submodules as well as integrates various common libs such as msgpack and tweetnacl.
+A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of the `basd` library is the `@basd/base` module, containing many extensions to the Lodash package and other useful and dependable packages. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. Basd itself acts as a facade to all of these submodules as well as integrates various common libraries such as msgpack and tweetnacl.
 
 ## Installation
 
@@ -39,73 +39,13 @@ _.log('Hello, World!')
 For specific submodule usage, refer to the individual module's documentation.
 
 
-## Features
-- Detailed explanation of what each submodule does.
-
-### @basd/base
-- Purpose and usage of `@basd/base`.
-
-### @basd/pipe
-- Purpose and usage of `@basd/pipe`.
-
-### @basd/logger
-- Purpose and usage of `@basd/logger`.
-
-## Examples
-- Code snippets that show how to use the main functionalities of each module.
-
-## Tests
-- Description of the testing setup and how to run tests.
-
-## Contributing
-- Steps for contributing to the project.
-
-
-
-
-
+## Modules
 
 This library also provides additional modules, `@basd/pipe`, `@basd/logger`, and core `@basd/base`, each offering unique functionalities to your projects.
 
-## Modules
-
 ### @basd/base
 
-
-
-# Submodules
-
-## @basd/base
-
 The `@basd/base` module is a comprehensive utility library that extends lodash with a range of custom utility methods. As a crucial part of the `basd` suite of foundational libraries, it provides the backbone for building more intricate applications.
-
-### Features
-
-- **Extends Lodash:** `@basd/base` builds upon the versatile lodash library by introducing custom utility methods that simplify your work.
-- **Data Conversion:** It comes with numerous functions that help you convert and manipulate different types of data.
-- **Environment Checks:** It provides functions to check the current environment and make necessary adjustments.
-- **String Manipulation:** It includes a wide array of string manipulation methods.
-- **Utility Functions:** In addition to the common lodash utility functions, it introduces more functions tailored for common tasks in complex applications.
-- **Encoding and Execution:** It offers methods for encoding and decoding data, and for executing commands and other operations.
-
-### Usage
-
-In your project, you can import the base and start using it as follows:
-
-```javascript
-const Base = require('@basd/base')
-
-// Use the 'objProp' method to define a property on an object
-const myObject = {}
-Base.objProp(myObject, 'propertyName', 'propertyValue')
-
-console.log(myObject.propertyName) // Outputs: 'propertyValue'
-```
-
-For a detailed guide on how to use this module and its many methods, please refer to the [`@basd/base`](./modules/base/README.md) readme.
-
-
-
 
 The heart of this library. `@basd/base` imports lodash and adds various utility and helper functions. Some of the key functionalities include:
 
@@ -114,26 +54,45 @@ The heart of this library. `@basd/base` imports lodash and adds various utility 
 - `_.sortChars`: Method for sorting characters in a string or JSON stringified object.
 - And more: Check the source code for more utility methods.
 
+#### Features
+
+- **Extends Lodash:** `@basd/base` builds upon the versatile lodash library by introducing custom utility methods that simplify your work.
+- **Data Conversion:** It comes with numerous functions that help you convert and manipulate different types of data.
+- **Environment Checks:** It provides functions to check the current environment and make necessary adjustments.
+- **String Manipulation:** It includes a wide array of string manipulation methods.
+- **Utility Functions:** In addition to the common lodash utility functions, it introduces more functions tailored for common tasks in complex applications.
+- **Encoding and Execution:** It offers methods for encoding and decoding data, and for executing commands and other operations.
+
+#### Usage
+
+In your project, you can import the base and start using it as follows:
+
+```javascript
+const _ = require('@basd/base')
+
+// Use the 'objProp' method to define a property on an object
+const myObject = {}
+_.objProp(myObject, 'propertyName', 'propertyValue')
+
+console.log(myObject.propertyName) // Outputs: 'propertyValue'
+```
+
+For a detailed guide on how to use this module and its many methods, please refer to the [`@basd/base`](./modules/base/readme.md) readme.
+
 ### @basd/logger
+
 An effective logging tool, configurable to your needs.
-
-
-
-
-# Submodules
-
-## @basd/logger
 
 `@basd/logger` is a flexible and robust logging library designed to work seamlessly in both the browser and Node.js environments. It's part of the `basd` suite of foundational libraries and is built with `@basd/base`, utilizing its core utility and helper functions.
 
-### Features
+#### Features
 
 - **Versatile Logging:** Supports various logging levels including `debug`, `info`, `warn`, `error`, and `log`.
 - **Multiple Targets:** Capable of printing logs directly to the console, writing to a file, or even a specified database.
 - **Integration with Winston:** When working in a Node.js environment, it integrates with the popular logging library `winston` for advanced logging capabilities.
 - **Log Reading:** With the `NodeLogger`, you can read logs directly from the file system.
 
-### Usage
+#### Usage
 
 In your project, you can import the logger and begin using it as follows:
 
@@ -150,30 +109,22 @@ myLogger.error('Error message')
 myLogger.log('General log message')
 ```
 
-For more detailed usage and examples, check out the [`@basd/logger`](./modules/logger/README.md) readme.
-
-
-
+For more detailed usage and examples, check out the [`@basd/logger`](./modules/logger/readme.md) readme.
 
 ### @basd/pipe
+
 A module that provides pipe and stream functionality.
-
-
-
-# Submodules
-
-## @basd/pipe
 
 The `@basd/pipe` module is a powerful stream management library that acts as a convenient wrapper around Node.js streams. Part of the `basd` suite of foundational libraries, it utilizes functions from `@basd/base` for core operations.
 
-### Features
+#### Features
 
 - **Stream Simplification:** `@basd/pipe` provides an easier way to create and manage different types of Node.js streams.
 - **Stream Processing:** It allows you to process data as it flows through streams effectively, improving efficiency in resource-intensive applications.
 - **Custom Handlers:** The module supports customization of read/write handlers for specialized data processing tasks.
 - **Helper Methods:** It includes a suite of helper methods designed to streamline your work with streams.
 
-### Usage
+#### Usage
 
 In your project, you can import the pipe and start using it as follows:
 
@@ -191,14 +142,7 @@ myPipe.onData(data => {
 myPipe.write('Hello, world!')
 ```
 
-For a more comprehensive guide on how to use this module, its various methods, and custom handler creation, refer to the [`@basd/pipe`](./modules/pipe/README.md) readme.
-
-
-
-
-
-
-
+For a more comprehensive guide on how to use this module, its various methods, and custom handler creation, refer to the [`@basd/pipe`](./modules/pipe/readme.md) readme.
 
 ## Documentation
 
@@ -234,9 +178,20 @@ Thank you! Please see our [contributing guidelines](/docs/contributing.md) for d
 
 
 
-## Donations
+## Support
 
 If you find this project useful and would like to support our work, consider making a donation. Your contribution helps us continue improving this project and creating new ones. Every little bit counts!
+
+If you find this project useful and want to show some love, you can support it by donating:
+
+If you found this project helpful and want to show some love, you can buy me a coffee (or more likely a piece of hardware) with a donation:
+
+**Bitcoin**: ```3P3QsMVK89JBNqZQv5zMAKG8FK3kJM4rjt```
+
+**Monero**: ```43hhubS27LkaXMHfoHaSKt9gPSPqeZh9gTes2yKvv2usZJJ6SQ4nVas2CdPvP1JnZeSsXC37LJzZvG13M3b8HgN9P7yjddv```
+
+
+
 
 Here are our wallet addresses:
 
@@ -256,36 +211,7 @@ Please, scan the following QR codes if you prefer mobile wallets:
 
 We sincerely appreciate your generosity!
 
-
-
-
-
-
-
-## Support
-
-If you find this project useful and want to show some love, you can support it by donating:
-
-**Bitcoin:** `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa`
-
-**Monero:** `49N4oGjk7RCHStek8i6C6c6mAJpegP9CJuiSJhonWEJHoAx4ypSw7oY6yZ8yCFuVjD9S3x2PPeyhCV4VZKXCgkfZ938tyqL`
-
 Your donations are greatly appreciated and help support the continued development of this project.
-
-
-
-
-
-
-
-
-## Support
-
-If you found this project helpful and want to show some love, you can buy me a coffee (or more likely a piece of hardware) with a donation:
-
-**Bitcoin**: `3P3QsMVK89JBNqZQv5zMAKG8FK3kJM4rjt`
-
-**Monero**: `43hhubS27LkaXMHfoHaSKt9gPSPqeZh9gTes2yKvv2usZJJ6SQ4nVas2CdPvP1JnZeSsXC37LJzZvG13M3b8HgN9P7yjddv`
 
 Please note that these addresses are for donations only. 
 
