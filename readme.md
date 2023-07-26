@@ -1,6 +1,6 @@
 # basd
 
-> Based code don't write itself
+> Based code lifts all ships
 
 [![npm](https://img.shields.io/npm/v/basd?style=flat&logo=npm)](https://www.npmjs.com/package/basd)
 [![pipeline](https://gitlab.com/basedwon/basd/badges/master/pipeline.svg)](https://gitlab.com/basedwon/basd/-/pipelines)
@@ -17,6 +17,43 @@ A foundational JavaScript library that extends lodash with various custom utilit
 ## Modules
 
 ### @basd/base
+
+
+
+# Submodules
+
+## @basd/base
+
+The `@basd/base` module is a comprehensive utility library that extends lodash with a range of custom utility methods. As a crucial part of the `basd` suite of foundational libraries, it provides the backbone for building more intricate applications.
+
+### Features
+
+- **Extends Lodash:** `@basd/base` builds upon the versatile lodash library by introducing custom utility methods that simplify your work.
+- **Data Conversion:** It comes with numerous functions that help you convert and manipulate different types of data.
+- **Environment Checks:** It provides functions to check the current environment and make necessary adjustments.
+- **String Manipulation:** It includes a wide array of string manipulation methods.
+- **Utility Functions:** In addition to the common lodash utility functions, it introduces more functions tailored for common tasks in complex applications.
+- **Encoding and Execution:** It offers methods for encoding and decoding data, and for executing commands and other operations.
+
+### Usage
+
+In your project, you can import the base and start using it as follows:
+
+```javascript
+const Base = require('@basd/base')
+
+// Use the 'objProp' method to define a property on an object
+const myObject = {}
+Base.objProp(myObject, 'propertyName', 'propertyValue')
+
+console.log(myObject.propertyName) // Outputs: 'propertyValue'
+```
+
+For a detailed guide on how to use this module and its many methods, please refer to the [`@basd/base`](./modules/base/README.md) readme.
+
+
+
+
 The heart of this library. `@basd/base` imports lodash and adds various utility and helper functions. Some of the key functionalities include:
 
 - `_.encode` & `_.decode`: Encoding and decoding methods, primarily using base58.
@@ -27,8 +64,84 @@ The heart of this library. `@basd/base` imports lodash and adds various utility 
 ### @basd/logger
 An effective logging tool, configurable to your needs.
 
+
+
+
+# Submodules
+
+## @basd/logger
+
+`@basd/logger` is a flexible and robust logging library designed to work seamlessly in both the browser and Node.js environments. It's part of the `basd` suite of foundational libraries and is built with `@basd/base`, utilizing its core utility and helper functions.
+
+### Features
+
+- **Versatile Logging:** Supports various logging levels including `debug`, `info`, `warn`, `error`, and `log`.
+- **Multiple Targets:** Capable of printing logs directly to the console, writing to a file, or even a specified database.
+- **Integration with Winston:** When working in a Node.js environment, it integrates with the popular logging library `winston` for advanced logging capabilities.
+- **Log Reading:** With the `NodeLogger`, you can read logs directly from the file system.
+
+### Usage
+
+In your project, you can import the logger and begin using it as follows:
+
+```javascript
+const Logger = require('@basd/logger')
+
+const myLogger = new Logger()
+
+// Log messages at various levels
+myLogger.debug('Debug message')
+myLogger.info('Informational message')
+myLogger.warn('Warning message')
+myLogger.error('Error message')
+myLogger.log('General log message')
+```
+
+For more detailed usage and examples, check out the [`@basd/logger`](./modules/logger/README.md) readme.
+
+
+
+
 ### @basd/pipe
 A module that provides pipe and stream functionality.
+
+
+
+# Submodules
+
+## @basd/pipe
+
+The `@basd/pipe` module is a powerful stream management library that acts as a convenient wrapper around Node.js streams. Part of the `basd` suite of foundational libraries, it utilizes functions from `@basd/base` for core operations.
+
+### Features
+
+- **Stream Simplification:** `@basd/pipe` provides an easier way to create and manage different types of Node.js streams.
+- **Stream Processing:** It allows you to process data as it flows through streams effectively, improving efficiency in resource-intensive applications.
+- **Custom Handlers:** The module supports customization of read/write handlers for specialized data processing tasks.
+- **Helper Methods:** It includes a suite of helper methods designed to streamline your work with streams.
+
+### Usage
+
+In your project, you can import the pipe and start using it as follows:
+
+```javascript
+const Pipe = require('@basd/pipe')
+
+const myPipe = new Pipe()
+
+// Add a data handler
+myPipe.onData(data => {
+  console.log('Received data:', data)
+})
+
+// Write data to the pipe
+myPipe.write('Hello, world!')
+```
+
+For a more comprehensive guide on how to use this module, its various methods, and custom handler creation, refer to the [`@basd/pipe`](./modules/pipe/README.md) readme.
+
+
+
 
 ## Installation
 
@@ -257,4 +370,7 @@ npm test
 ## Contributing
 
 Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
+
+
+
 

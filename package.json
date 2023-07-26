@@ -44,10 +44,25 @@
     "numeral": "^2.0.6",
     "tweetnacl": "^1.0.3"
   },
-  "keywords": [],
   "devDependencies": {
     "@basd/testr": "^0.0.9",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
-  }
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "library",
+    "utility",
+    "helper",
+    "base",
+    "pipe",
+    "logger",
+    "streams",
+    "winston",
+    "lodash",
+    "logging",
+    "stream-management",
+    "foundation-library"
+  ]
 }
