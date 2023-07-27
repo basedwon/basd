@@ -30,9 +30,9 @@
     ]
   },
   "scripts": {
-    "dev": "nodemon ./lib/basd-node",
+    "dev": "nodemon -x npm test",
     "docs": "jsdoc2md lib/*.js > docs/api.md",
-    "test": "testr test/basd.test.js"
+    "test": "testr test"
   },
   "dependencies": {
     "@basd/base": "file:modules/base",

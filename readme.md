@@ -12,7 +12,7 @@
 [![Twitter](https://img.shields.io/badge/@basdwon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of the `basd` library is the `@basd/base` module, containing many extensions to the Lodash package and other useful and dependable packages. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. basd itself acts as a facade to all of these submodules as well as integrates various common libraries such as msgpack and tweetnacl.
+A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of `basd` is the `@basd/base` module, containing many extensions to Lodash. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. basd itself acts as a facade to all of these submodules as well as integrating various common and stable packages such as msgpack and tweetnacl.
 
 ## Installation
 
@@ -30,15 +30,17 @@ const _ = require('basd')
 const { _, log, uuid, ...etc } = require('basd')
 ```
 
-Then, use any method just like you would use lodash:
+Then, use any of the plethora of methods:
 
 ```js
 _.log('Hello, World!')
 ```
 
-For specific submodule usage, refer to the individual module's documentation.
+## Documentation
 
-## Submodules
+- [API Reference](/docs/api.md)
+
+## Modules
 
 - [@basd/base](https://gitlab.com/frenware/core/basd/base) imports lodash and adds various utility and helper functions
 
@@ -46,9 +48,7 @@ For specific submodule usage, refer to the individual module's documentation.
 
 - [@basd/logger](https://gitlab.com/frenware/core/basd/logger) is a simple logging tool, configurable to your needs
 
-## Documentation
-
-- [API Reference](/docs/api.md)
+For specific submodule usage, refer to the individual module's documentation.
 
 ## Tests
 
@@ -65,8 +65,6 @@ To run the tests:
 ```bash
 npm test
 ```
-
-Testing in the browser: *coming soon...*
 
 ## Contributing
 
