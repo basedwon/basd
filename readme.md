@@ -70,20 +70,21 @@ npm test
 
 Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
 
-## License
-
-basd is [MIT licensed](https://gitlab.com/basedwon/basd/-/blob/master/LICENSE).
-
 ## Donations
 
 If you find this project useful and want to help support further development, please send us some coin. We greatly appreciate any and all contributions. Thank you!
 
 **Bitcoin (BTC):**
 ```
-1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
+1JUb1yNFH6wjGekRUW6Dfgyg4J4h6wKKdF
 ```
 
 **Monero (XMR):**
 ```
-4AgoP6wU6p4xZyq9CoJZa3T2FJbgU4dHii5EJDMzvbaNQmsUvVNwZaJbeGUTkiQJfz6hmEKwGQXW8v9RjSxXp6EFLa5XU
+46uV2fMZT3EWkBrGUgszJCcbqFqEvqrB4bZBJwsbx7yA8e2WBakXzJSUK8aqT4GoqERzbg4oKT2SiPeCgjzVH6VpSQ5y7KQ
 ```
+
+## License
+
+basd is [MIT licensed](https://gitlab.com/basedwon/basd/-/blob/master/LICENSE).
+
