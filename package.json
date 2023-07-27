@@ -1,7 +1,7 @@
 {
   "name": "basd",
   "version": "1.0.2",
-  "description": "basd is a comprehensive suite of utility functions and helper libraries that augment Lodash and add much herbs and spices.",
+  "description": "basd is a comprehensive suite of utility functions and helper libraries that augment lodash and add much herbs and spices.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
   "repository": {
@@ -24,13 +24,8 @@
   "browser": {
     ".": "./lib/basd.js"
   },
-  "nodemonConfig": {
-    "watch": [
-      "../"
-    ]
-  },
   "scripts": {
-    "dev": "nodemon -x npm test",
+    "dev": "nodemon -w .. -x npm test",
     "docs": "jsdoc2md lib/*.js > docs/api.md",
     "test": "testr test"
   },
