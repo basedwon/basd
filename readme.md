@@ -12,7 +12,7 @@
 [![Twitter](https://img.shields.io/badge/@basdwon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of `basd` is the `@basd/base` module, containing many extensions to Lodash. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. basd itself acts as a facade to all of these submodules as well as integrating various common and stable packages such as msgpack and tweetnacl.
+`basd` is a comprehensive suite of utility functions and helper libraries that augment Lodash and add much herbs and spices. A solid foundation on which to build robust and complex JS applications. At the heart of `basd` is the `@basd/base` module, containing many extensions to Lodash. `@basd/pipe` deals with readable and writable streams and `@basd/logger` is an isomorphic logger for all of your logging needs. basd itself acts as a facade to all of these submodules as well as integrating various common and stable packages such as msgpack and tweetnacl.
 
 ## Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "basd",
   "version": "0.0.0",
-  "description": "A comprehensive suite of utility functions and helper libraries augmenting Lodash and adding much herbs and spices.",
+  "description": "basd is a comprehensive suite of utility functions and helper libraries that augment Lodash and add much herbs and spices.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
   "repository": {
