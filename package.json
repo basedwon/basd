@@ -57,7 +57,6 @@
     "winston",
     "lodash",
     "logging",
-    "stream-management",
-    "foundation-library"
+    "stream-management"
   ]
 }
