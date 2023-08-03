@@ -31,9 +31,9 @@
   },
   "dependencies": {
     "@basd/base": "^0.0.1",
-    "@basd/logger": "^0.0.1",
+    "@basd/logger": "^0.0.2",
     "@basd/pipe": "^0.0.1",
-    "mimetics": "^0.0.4",
+    "mimetics": "^0.0.6",
     "moment": "^2.29.4",
     "msgpack-lite": "^0.1.26",
     "numeral": "^2.0.6",
