@@ -33,9 +33,9 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@basd/base": "^0.0.1",
-    "@basd/logger": "^0.0.2",
-    "@basd/pipe": "^0.0.1",
+    "@basd/base": "^0.0.4",
+    "@basd/logger": "^0.0.3",
+    "@basd/pipe": "^0.0.2",
     "axios": "^1.4.0",
     "mimetics": "^0.0.6",
     "moment": "^2.29.4",
@@ -44,7 +44,7 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
-    "@basd/testr": "^0.0.9",
+    "@basd/testr": "^0.1.1",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
   },
