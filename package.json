@@ -33,7 +33,7 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@basd/base": "^0.0.5",
+    "@basd/base": "^0.0.6",
     "@basd/logger": "^0.0.3",
     "@basd/pipe": "^0.0.2",
     "axios": "^1.4.0",
