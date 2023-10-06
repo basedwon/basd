@@ -34,10 +34,10 @@
   },
   "dependencies": {
     "@basd/base": "^0.0.6",
-    "@basd/logger": "^0.0.3",
-    "@basd/pipe": "^0.0.2",
+    "@basd/logger": "^0.0.4",
+    "@basd/pipe": "^0.0.3",
     "axios": "^1.4.0",
-    "mimetics": "^0.0.6",
+    "mimetics": "^0.0.8",
     "moment": "^2.29.4",
     "msgpack-lite": "^0.1.26",
     "numeral": "^2.0.6",
