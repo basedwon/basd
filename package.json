@@ -37,7 +37,6 @@
     "@basd/logger": "^0.0.5",
     "@basd/pipe": "^0.0.4",
     "axios": "^1.4.0",
-    "byte-size": "^8.1.1",
     "mimetics": "^0.0.8",
     "moment": "^2.29.4",
     "msgpack-lite": "^0.1.26",
