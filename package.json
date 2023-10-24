@@ -33,9 +33,9 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@basd/base": "^0.0.6",
-    "@basd/logger": "^0.0.4",
-    "@basd/pipe": "^0.0.3",
+    "@basd/base": "^0.0.7",
+    "@basd/logger": "^0.0.5",
+    "@basd/pipe": "^0.0.4",
     "axios": "^1.4.0",
     "byte-size": "^8.1.1",
     "mimetics": "^0.0.8",
